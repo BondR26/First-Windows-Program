@@ -1,0 +1,52 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+
+//ICONS
+windows_icon              ICON               OS.ico
+lamot_icon	   	       	  ICON				 t3dx.ico
+
+//CURSORS
+green_arrow_cursor		  CURSOR			 greenarrow.cur
+blue_arrow_cursor         CURSOR             bluearrow.cur
+//Sounds
+Tehcno_sound			  WAVE			     techno.wav
+Create_sound			  WAVE			     create.wav
+Beam_sound			      WAVE			     beam.wav
+Energize_sound            WAVE               energize.wav
+Teleport_sound            WAVE               TELEPORT.WAV
+Warp_sound                WAVE               warp.wav
+Sonic_sound				  WAVE               sonic.wav
+
+Main_Menu MENU DISCARDABLE
+{
+	POPUP "Cursor"
+	{
+		MENUITEM "Green arrow", MENU_CURSOR_GREENARROW
+		MENUITEM "Blue arrow", MENU_CURSOR_BLUEARROW
+	}
+	POPUP "Sound"
+	{
+		MENUITEM "techno", MENU_SOUND_TECHNO
+		MENUITEM "create", MENU_SOUND_CREATE
+		MENUITEM "beam", MENU_SOUND_BEAM
+		MENUITEM "energize", MENU_SOUND_ENERGIZE
+		MENUITEM "teleport", MENU_SOUND_TELEPORT
+		MENUITEM "warp", MENU_SOUND_WARP
+		MENUITEM "Sonic", MENU_SOUND_SONIC
+	}
+	POPUP "Icon"
+	{
+		MENUITEM "lamot icon", MENU_ICON_LAMOT
+		MENUITEM "windows icon", MENU_ICON_WND
+	}
+	POPUP "Help"
+	{
+		MENUITEM "About", MENU_HELP
+	}
+	POPUP "Exit"
+	{
+		MENUITEM "Exit", MENU_EXIT
+	}
+}
